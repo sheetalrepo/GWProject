@@ -1,0 +1,6 @@
+#Format --> GRAPHFILE=PATHGENERATOR;SEVERITYFLAG;PATHGENERATOR1;SEVERITYFLAG1;...
+
+Simple.json=random(vertex_coverage(100));I;AStarPath(ReachedVertex(v_VerifyAppRunning));I;RandomPath(TimeDuration(30));I;random(edge_coverage(100));I;
+
+WikiWD.json=random(vertex_coverage(100));I;AStarPath(ReachedVertex(VerifyLoginPageWD));I;random(edge_coverage(100));I;RandomPath(TimeDuration(120));I;
+
