@@ -17,12 +17,13 @@ import org.graphwalker.core.machine.ExecutionContext;
 import org.graphwalker.java.annotation.GraphWalker;
 import org.graphwalker.java.test.Result;
 import org.graphwalker.java.test.TestBuilder;
-import org.junit.After;
-import org.junit.AfterClass;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+//import org.junit.jupiter.api.*;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Test;
+
 
 @Generated(value = "src/main/resources/com/company/Simple.json")
 @GraphWalker(value = "random(edge_coverage(100))", start = "Start", groups = { "default" })
@@ -38,16 +39,6 @@ public class SimpleImpl extends ExecutionContext implements Simple {
 	@AfterClass
 	public static void tearDownAfterClass() throws Exception {
 		System.out.println("@@@@@@@@@ After Class @@@@@@@@@@");
-	}
-
-	@Before
-	public void setUp() throws Exception {
-		System.out.println("########## Before ##########");
-	}
-
-	@After
-	public void tearDown() throws Exception {
-		System.out.println("########## After ##########");
 	}
 
 	@Override
